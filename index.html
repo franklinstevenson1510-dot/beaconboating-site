@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beacon — marine conditions & hazard reports for Florida boaters</title>
+<meta name="description" content="Live NOAA conditions, the real nautical chart, 213 Florida marinas and hazard reports from the fleet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EEF3F2; --surface:#FFFFFF; --ink:#0E2135; --ink-soft:rgba(14,33,53,0.70);
+    --line:rgba(14,33,53,0.12); --brass:#7A5B22; --teal:#1C7A72;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#081420; --surface:#0E2135; --ink:#F3EFE6; --ink-soft:rgba(243,239,230,0.72);
+      --line:rgba(243,239,230,0.14); --brass:#D9B876; --teal:#55C1B8;
+    }
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Public Sans',-apple-system,'Segoe UI',sans-serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:720px; margin:0 auto; padding:48px 22px 96px; }
+  h1,h2{ font-family:'Spectral',Georgia,serif; font-weight:600; line-height:1.25; }
+  h1{ font-size:2rem; margin:0 0 6px; }
+  h2{ font-size:1.18rem; margin:38px 0 10px; }
+  .brand{ display:flex; align-items:center; gap:9px; font-family:'Spectral',Georgia,serif;
+          font-weight:600; font-size:1.1rem; letter-spacing:0.04em; margin-bottom:30px; }
+  .brand em{ font-style:italic; color:var(--brass); }
+  .brand svg{ width:22px; height:22px; color:var(--brass); }
+  .asof{ font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:0.76rem;
+         color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; }
+  .lede{ font-size:1.05rem; margin:18px 0 0; }
+  p,li{ color:var(--ink-soft); }
+  p{ margin:0 0 14px; }
+  strong{ color:var(--ink); }
+  ul{ margin:0 0 14px; padding-left:20px; }
+  li{ margin-bottom:7px; }
+  table{ width:100%; border-collapse:collapse; margin:0 0 16px; font-size:0.92rem; }
+  th,td{ text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th{ color:var(--ink); font-weight:600; font-size:0.78rem; letter-spacing:0.05em; text-transform:uppercase; }
+  td{ color:var(--ink-soft); }
+  .card{ background:var(--surface); border:1px solid var(--line); border-radius:16px;
+         padding:18px 20px; margin:0 0 18px; }
+  .card p:last-child{ margin-bottom:0; }
+  a{ color:var(--teal); }
+  footer{ margin-top:54px; padding-top:18px; border-top:1px solid var(--line);
+          font-size:0.85rem; color:var(--ink-soft); }
+
+  .lede-big{ font-size:1.22rem; line-height:1.55; }
+  .pills{ display:flex; flex-wrap:wrap; gap:10px; margin:26px 0 0; }
+  .pill{ border:1px solid var(--line); border-radius:999px; padding:9px 16px; font-size:0.9rem;
+         color:var(--ink); text-decoration:none; background:var(--surface); }
+  .pill.primary{ background:var(--brass); border-color:var(--brass); color:#1a1205; font-weight:600; }
+  .grid{ display:grid; gap:14px; margin:30px 0 0; }
+  @media(min-width:620px){ .grid{ grid-template-columns:1fr 1fr; } }
+  .note{ font-size:0.86rem; color:var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L12 7"/><path d="M9 7 h6 l2 4 H7 Z"/><path d="M7 11 L5 21 H19 L17 11"/><path d="M9 21 v-4 a3 3 0 0 1 6 0 v4"/></svg>
+    <span>BEA<em>CON</em></span>
+  </div>
+  <h1>Know the water before you leave the dock.</h1>
+  <p class="lede lede-big">Beacon is a marine conditions and hazard-reporting app for Florida
+  boaters. Live NOAA wind, tides and water temperature for 28 waterways, the real nautical
+  chart, slip pricing for 213 marinas, and hazard reports from the boaters actually out there.</p>
+
+  <p class="note" style="margin:22px 0 0;"><strong style="color:var(--ink);">Your first
+  month is free</strong> &mdash; every feature, no card. After that Beacon Pro is
+  $5.49/month or $54.99/year. There is no limited free version: when the month is up,
+  Beacon asks you to subscribe. Nothing you have saved is deleted either way.</p>
+
+  <div class="pills">
+    <a class="pill primary" href="#">Coming to the App Store</a>
+    <a class="pill" href="/privacy">Privacy Policy</a>
+    <a class="pill" href="/support">Support</a>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h2 style="margin-top:0;">Live, or it says so</h2>
+      <p>Conditions come straight from the National Weather Service and NOAA tide stations.
+      Where there is no forecast for a waterway, Beacon says that rather than printing a
+      calm-looking zero.</p></div>
+    <div class="card"><h2 style="margin-top:0;">Reports from the fleet</h2>
+      <p>Shoaling, debris, a manatee zone, a patrol. Filed in one tap with the position
+      attached, and on every other boater&rsquo;s chart seconds later.</p></div>
+    <div class="card"><h2 style="margin-top:0;">Marinas, closest first</h2>
+      <p>213 Florida marinas with amenities and an estimated seasonal slip-rate band.
+      Where Beacon only knows the town rather than the dock, the card says so.</p></div>
+    <div class="card"><h2 style="margin-top:0;">Spend, tracked as you go</h2>
+      <p>Set a budget for fuel, dockage and provisions, log what you spend at the pump,
+      and see what is left before the next stop.</p></div>
+  </div>
+
+  <h2>Beacon is not a navigation system</h2>
+  <p>It is a planning aid. Depths shift, markers move, and boater reports are unverified.
+  Keep official charts and a working VHF aboard, and trust your eyes over any screen. In an
+  emergency call 911 or hail the U.S. Coast Guard on VHF Channel 16.</p>
+  <footer>
+    Beacon &middot; <a href="mailto:crew@beaconboating.app">crew@beaconboating.app</a> &middot;
+    <a href="/privacy">Privacy</a> &middot;
+    <a href="/support">Support</a> &middot;
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+  </footer>
+</div>
+</body>
+</html>
