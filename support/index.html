@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support · Beacon</title>
+<meta name="description" content="How to get help with Beacon, manage your subscription, or delete your account.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EEF3F2; --surface:#FFFFFF; --ink:#0E2135; --ink-soft:rgba(14,33,53,0.70);
+    --line:rgba(14,33,53,0.12); --brass:#7A5B22; --teal:#1C7A72;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#081420; --surface:#0E2135; --ink:#F3EFE6; --ink-soft:rgba(243,239,230,0.72);
+      --line:rgba(243,239,230,0.14); --brass:#D9B876; --teal:#55C1B8;
+    }
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Public Sans',-apple-system,'Segoe UI',sans-serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:720px; margin:0 auto; padding:48px 22px 96px; }
+  h1,h2{ font-family:'Spectral',Georgia,serif; font-weight:600; line-height:1.25; }
+  h1{ font-size:2rem; margin:0 0 6px; }
+  h2{ font-size:1.18rem; margin:38px 0 10px; }
+  .brand{ display:flex; align-items:center; gap:9px; font-family:'Spectral',Georgia,serif;
+          font-weight:600; font-size:1.1rem; letter-spacing:0.04em; margin-bottom:30px; }
+  .brand em{ font-style:italic; color:var(--brass); }
+  .brand svg{ width:22px; height:22px; color:var(--brass); }
+  .asof{ font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:0.76rem;
+         color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; }
+  .lede{ font-size:1.05rem; margin:18px 0 0; }
+  p,li{ color:var(--ink-soft); }
+  p{ margin:0 0 14px; }
+  strong{ color:var(--ink); }
+  ul{ margin:0 0 14px; padding-left:20px; }
+  li{ margin-bottom:7px; }
+  table{ width:100%; border-collapse:collapse; margin:0 0 16px; font-size:0.92rem; }
+  th,td{ text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th{ color:var(--ink); font-weight:600; font-size:0.78rem; letter-spacing:0.05em; text-transform:uppercase; }
+  td{ color:var(--ink-soft); }
+  .card{ background:var(--surface); border:1px solid var(--line); border-radius:16px;
+         padding:18px 20px; margin:0 0 18px; }
+  .card p:last-child{ margin-bottom:0; }
+  a{ color:var(--teal); }
+  footer{ margin-top:54px; padding-top:18px; border-top:1px solid var(--line);
+          font-size:0.85rem; color:var(--ink-soft); }
+
+  .lede-big{ font-size:1.22rem; line-height:1.55; }
+  .pills{ display:flex; flex-wrap:wrap; gap:10px; margin:26px 0 0; }
+  .pill{ border:1px solid var(--line); border-radius:999px; padding:9px 16px; font-size:0.9rem;
+         color:var(--ink); text-decoration:none; background:var(--surface); }
+  .pill.primary{ background:var(--brass); border-color:var(--brass); color:#1a1205; font-weight:600; }
+  .grid{ display:grid; gap:14px; margin:30px 0 0; }
+  @media(min-width:620px){ .grid{ grid-template-columns:1fr 1fr; } }
+  .note{ font-size:0.86rem; color:var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L12 7"/><path d="M9 7 h6 l2 4 H7 Z"/><path d="M7 11 L5 21 H19 L17 11"/><path d="M9 21 v-4 a3 3 0 0 1 6 0 v4"/></svg>
+    <span>BEA<em>CON</em></span>
+  </div>
+  <h1>Support</h1>
+  <p class="lede">Email <a href="mailto:crew@beaconboating.app">crew@beaconboating.app</a>
+  and a person will read it. Please say which iPhone and which iOS version you are on.</p>
+
+  <h2>Common things</h2>
+  <div class="card">
+    <p><strong>Delete your account and data.</strong> In the app: Profile &rarr;
+    Delete account &amp; data. It is immediate and cannot be undone. If you cannot reach the
+    app, email us and we will do it for you.</p>
+  </div>
+  <div class="card">
+    <p><strong>Manage or cancel your subscription.</strong> Beacon Pro is billed by Apple.
+    Settings &rsaquo; your name &rsaquo; Subscriptions. Deleting your Beacon account does not
+    cancel an App Store subscription.</p>
+  </div>
+  <div class="card">
+    <p><strong>Conditions look wrong.</strong> Beacon shows what the National Weather Service
+    and NOAA publish for your waterway, with the source and the time of the reading on the
+    card. If those disagree with what you can see out of the window, believe the window.</p>
+  </div>
+  <div class="card">
+    <p><strong>A hazard report is wrong or offensive.</strong> Tap the flag on the report.
+    It is hidden on your phone straight away. You can also take back your own reports with
+    Retract.</p>
+  </div>
+
+  <h2>Emergencies</h2>
+  <p><strong>Beacon cannot call for help and does not contact any authority.</strong>
+  In an emergency call 911 or hail the U.S. Coast Guard on VHF Channel 16.</p>
+  <footer>
+    Beacon &middot; <a href="mailto:crew@beaconboating.app">crew@beaconboating.app</a> &middot;
+    <a href="/privacy">Privacy</a> &middot;
+    <a href="/support">Support</a> &middot;
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+  </footer>
+</div>
+</body>
+</html>
