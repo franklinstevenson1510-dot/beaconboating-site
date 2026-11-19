@@ -61,7 +61,7 @@
     <span>BEA<em>CON</em></span>
   </div>
 
-  <p class="asof">Last updated 10 October 2026</p>
+  <p class="asof">Last updated 18 November 2026</p>
   <h1>Privacy Policy</h1>
   <p class="lede">Beacon is a marine conditions and hazard-reporting app for Florida boaters.
   This page says exactly what we collect, why, where it goes, and how to get rid of it. It is
@@ -74,9 +74,12 @@
     <p><strong>Your position is used on your phone.</strong> It picks your waterway, sorts
     marinas by distance and draws your boat on the chart. Beacon does not upload a continuous
     track of where you have been.</p>
-    <p><strong>One exception, and it is deliberate:</strong> when you choose to file a hazard
+    <p><strong>Two exceptions, both deliberate.</strong> When you choose to file a hazard
     report, the coordinates of that hazard are sent with it and are visible to other boaters.
-    That is the entire point of the report. Nothing else about your position leaves the phone.</p>
+    That is the entire point of the report. And when you tap Locate, a <em>rounded</em> version
+    of your position — cut to about a kilometre, not your exact spot — goes to the National
+    Weather Service so it can tell us which marine zone you are in. Your precise position is
+    never sent to anyone.</p>
   </div>
 
   <h2>What we collect, and why</h2>
@@ -89,13 +92,16 @@
     </tr>
     <tr>
       <td>Boat name and length, home waterway</td>
-      <td>Optional. Shown on your profile and used to size slip-rate estimates</td>
+      <td>Optional. Shown on your profile and used to size slip-rate estimates. We also store the
+      waterway you last viewed, so the app opens where you left off</td>
       <td>Our database</td>
     </tr>
     <tr>
       <td>Your device's position</td>
       <td>To set your waterway, sort marinas by distance, draw your boat on the chart, and stamp a report with the right spot</td>
-      <td><strong>On your phone only</strong>, except as described under “Hazard reports” below</td>
+      <td><strong>On your phone only</strong>, with two exceptions: a position rounded to about
+      a kilometre goes to the National Weather Service when you tap Locate, and the exact spot is
+      attached to a hazard report if you choose to file one. Both are described below</td>
     </tr>
     <tr>
       <td>Hazard reports and tips you post</td>
@@ -155,8 +161,12 @@
     <li><strong>Apple</strong> — subscriptions, Sign in with Apple, and push notifications.</li>
     <li><strong>Resend</strong> — sends the sign-in code to your email address.</li>
     <li><strong>NOAA and the National Weather Service</strong> — we request conditions, tides
-    and chart tiles for the waterway you are viewing. These are US government services; your
-    account is not identified to them.</li>
+    and chart tiles for the waterway you are viewing. When you tap Locate we also send a position
+    rounded to about a kilometre, so they can tell us which marine zone that is. These are US
+    government services; your account is not identified to them.</li>
+    <li><strong>RevenueCat</strong> — keeps track of whether your subscription is active. It
+    receives an anonymous account identifier and the fact that a purchase happened. It never
+    receives your card details; only Apple handles those.</li>
     <li><strong>OpenStreetMap and OpenSeaMap</strong> — map tiles for the chart.</li>
   </ul>
   <p>That is the complete list. There is no advertising network, no analytics product and no
